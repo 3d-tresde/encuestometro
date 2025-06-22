@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Encuestómetro 3D</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      background-color: white;
+      color: #2c3e50;
+    }
+    #container {
+      max-width: 900px;
+      margin: auto;
+    }
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      margin-top: 2em;
+    }
+    img {
+      height: 80px;
+      margin-bottom: 1em;
+    }
+    p {
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .small-text {
+      font-size: 0.85em;
+      color: #555;
+      font-style: italic;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img src="Logo.png" alt="Logo 3D" />
+    <h1>Encuestómetro 3D: Evolución de Preferencias Electorales</h1>
+    <p>Esta visualización muestra la evolución de las preferencias electorales por candidatura según distintas encuestas aplicadas en el tiempo. Cada punto representa una medición, y las líneas muestran tendencias ponderadas según la confiabilidad de la encuesta.</p>
+    <p><strong>Haz clic sobre los nombres de los candidatos en la leyenda inferior</strong> para activar o desactivar sus líneas y enfocarte en uno o varios. Puedes también pasar el cursor sobre los puntos para ver detalles.</p>
+    <p class="small-text">Encuestómetro 3D es un experimento que busca a través de la evaluación metodológica de las encuestas nacionales evaluar tanto su funcionalidad práctica de predicción de las preferencias como también generar un modelo consolidado de interpretación de sus resultados.</p>
+
+    <iframe src="plot.html"></iframe>
+  </div>
+</body>
+</html>
